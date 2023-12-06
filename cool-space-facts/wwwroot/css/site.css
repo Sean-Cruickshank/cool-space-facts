@@ -28,6 +28,7 @@ body {
     background-color: black;
     height: 50px;
     margin-top:0;
+    border-bottom: 2px solid darkgoldenrod;
 }
 
     .nav-top ul {
@@ -50,13 +51,23 @@ body {
     }
 
         .nav-top li a {
-            color: white;
+            color: gray;
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
         }
 
             .nav-top li a:hover {
                 color: darkgoldenrod;
             }
+
+.nav-link-current {
+    background-color: #111 !important;
+}
+
+    .nav-link-current a {
+        color: white !important;
+    }
+
+/* Side Navbar */
 
 #nav-side {
     background-color: black;
@@ -67,11 +78,18 @@ body {
     position: fixed;
 }
 
+.sidenav-clock {
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 .nav-side-content {
     background-color: gray;
     border-radius: 5px;
     width: 130px;
-    height: 440px;
+    height: 400px;
     text-align: center;
     position: fixed;
     overflow-y: scroll;
@@ -79,8 +97,31 @@ body {
     scrollbar-width: none;
 }
 
+.nav-side-link {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.nav-side-link:hover {
+    color: darkgoldenrod;
+}
+
+.nav-side-item {
+    color:white;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+    .nav-side-item:hover {
+        color: darkgoldenrod;
+    }
+
 #nav-side-attributions {
-    padding-top: 440px;
+    padding-top: 400px;
 }
 
 #nav-side-logo {
@@ -114,6 +155,12 @@ body {
 
 #footer-main {
     padding-left: 150px;
+}
+
+/* Size */
+
+.size-card-title {
+    padding-top: 50px;
 }
 
 

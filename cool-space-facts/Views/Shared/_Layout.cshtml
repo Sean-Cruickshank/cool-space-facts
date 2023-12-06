@@ -16,7 +16,7 @@
 
                 <!-- Earth Image -->
                 <div class="js-earth-image">
-                    <img id="nav-earth-image" src="/earth-day.png" />
+                    <!--<img id="nav-earth-image" src="/earth-day.png" />-->
                 </div>
 
                 <!-- Hamburger Menu -->
@@ -28,16 +28,16 @@
                 <!-- Top Navbar -->
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
+                        <li class="nav-item js-nav-link-size">
                             <a class="nav-link" asp-area="" asp-controller="Compare" asp-action="Size">Size</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item js-nav-link-distance">
                             <a class="nav-link" asp-area="" asp-controller="Compare" asp-action="Distance">Distance</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item js-nav-link-temperature">
                             <a class="nav-link" asp-area="" asp-controller="Compare" asp-action="Temperature">Temperature</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item js-nav-link-speed">
                             <a class="nav-link" asp-area="" asp-controller="Compare" asp-action="Speed">Speed</a>
                         </li>
                     </ul>
@@ -49,45 +49,16 @@
     <!-- Side Navbar and Body -->
 
     <div id="nav-side" class="nav-side-width">
-        <p>Local Time</p>
-        <p class="js-sidenav-time"></p>
-        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+        <!-- Clock -->
+        <p class="sidenav-clock">Local Time</p>
+        <p class="sidenav-clock js-sidenav-clock"></p>
+        <a class="nav-link nav-side-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
         <div class="row justify-content-around">
-            <div class="nav-side-content col">
-                <ul>
-                    <li>Satelittes</li>
-                    <li>The Moon</li>
-                    <li>Venus</li>
-                    <li>Mercurcy</li>
-                    <li>The Sun</li>
-                    <li>Mars</li>
-                    <li>Asteroid Belt</li>
-                    <li>Satelittes</li>
-                    <li>The Moon</li>
-                    <li>Venus</li>
-                    <li>Mercurcy</li>
-                    <li>The Sun</li>
-                    <li>Mars</li>
-                    <li>Asteroid Belt</li>
-                    <li>Satelittes</li>
-                    <li>The Moon</li>
-                    <li>Venus</li>
-                    <li>Mercurcy</li>
-                    <li>The Sun</li>
-                    <li>Mars</li>
-                    <li>Asteroid Belt</li>
-                    <li>Satelittes</li>
-                    <li>The Moon</li>
-                    <li>Venus</li>
-                    <li>Mercurcy</li>
-                    <li>The Sun</li>
-                    <li>Mars</li>
-                    <li>Asteroid Belt</li>
-                </ul>
+            <div class="nav-side-content js-nav-side-content col">
             </div>
         </div>
 
-        <a id="nav-side-attributions" class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Attributions">Sources</a>
+        <a id="nav-side-attributions" class="nav-link nav-side-link" asp-area="" asp-controller="Home" asp-action="Attributions">Sources</a>
 
         <a href="#"><img id="nav-side-logo" src="/coollogo2.png" /></a>
     </div>
