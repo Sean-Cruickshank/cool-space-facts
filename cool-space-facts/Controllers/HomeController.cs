@@ -18,7 +18,7 @@ namespace cool_space_facts.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult attributions()
         {
             return View();
         }
