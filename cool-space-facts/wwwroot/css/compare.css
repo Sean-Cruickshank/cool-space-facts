@@ -1,0 +1,36 @@
+﻿/* Size */
+
+.size-card {
+    min-height: 750px;
+}
+
+    .size-card:nth-child(even) {
+    }
+
+.size-card-title {
+    padding-top: 50px;
+}
+
+/* @media screen size - Extra Large+ */
+@media only screen and (min-width: 1120px) {
+}
+
+/* @media screen size - Large+ */
+@media only screen and (min-width: 992px) {
+}
+
+/* @media screen size - Large */
+@media only screen and (min-width: 1120px) and (max-width: 1199.999px) {
+}
+
+/* @media screen size - Medium */
+@media only screen and (min-width: 768px) and (max-width: 991.999px) {
+}
+
+/* @media screen size - Small */
+@media only screen and (min-width: 576px) and (max-width: 767.999px) {
+}
+
+/* @media screen size - Extra Small */
+@media only screen and (max-width: 575.999px) {
+}

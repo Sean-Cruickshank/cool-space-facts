@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - cool_space_facts</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/cool_space_facts.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/nav.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/home.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/compare.css" asp-append-version="true" />
 </head>
 <body>
     <header>
         <!-- Navbar -->
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm mb-3 fixed-top">
-            <div class="container-fluid nav-top">
+            <div id="navbar" class="container-fluid nav-top">
 
                 <!-- Earth Image -->
                 <div class="js-earth-image">
@@ -20,9 +23,18 @@
                 </div>
 
                 <!-- Hamburger Menu -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button 
+                    class="navbar-toggler button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                    <div class="nav-icon">
+                        <img src="~/coollogo2.png" alt="Logo" height="45" />
+                    </div>
                 </button>
 
                 <!-- Top Navbar -->
@@ -50,17 +62,13 @@
 
     <div id="nav-side" class="nav-side-width">
         <!-- Clock -->
-        <p class="sidenav-clock">Local Time</p>
-        <p class="sidenav-clock js-sidenav-clock"></p>
+        <p class="nav-side-clock">Local Time</p>
+        <p class="nav-side-clock js-nav-side-clock"></p>
         <a class="nav-link nav-side-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
         <div class="row justify-content-around">
             <div class="nav-side-content js-nav-side-content col">
             </div>
         </div>
-
-        <a id="nav-side-attributions" class="nav-link nav-side-link" asp-area="" asp-controller="Home" asp-action="Attributions">Sources</a>
-
-        <a href="#"><img id="nav-side-logo" src="/coollogo2.png" /></a>
     </div>
 
     <div class="nav-side-width">test</div>
@@ -73,16 +81,40 @@
 
     <!-- Footer -->
 
-    <footer class="border-top footer text-muted">
-        <div id="footer-main" class="container">
-            &copy; 2023 - cool_space_facts - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+    <footer class="footer text-muted">
+        <div class="container-fluid">
+
+            <div class="row">
+                <div style="display: flex;" class="footer-top">
+                    <a class="link-a js-footer-link-Home" asp-area="" asp-controller="Home" asp-action="Index">HOME</a>
+                    <a class="link-a js-footer-link-Attributions" asp-area="" asp-controller="Home" asp-action="Attributions">ATTRIBUTIONS</a>
+                </div>
+
+                <div style="display: flex;" class="footer-top">
+                    <a class="link-a js-footer-link-Size" asp-area="" asp-controller="Compare" asp-action="Size">SIZE</a>
+                    <a class="link-a js-footer-link-Distance" asp-area="" asp-controller="Compare" asp-action="Distance">DISTANCE</a>
+                    <a class="link-a js-footer-link-Temperature" asp-area="" asp-controller="Compare" asp-action="Temperature">TEMPERATURE</a>
+                    <a class="link-a js-footer-link-Speed" asp-area="" asp-controller="Compare" asp-action="Speed">SPEED</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <a href="https://www.youtube.com/"><img src="~/coollogo2.png" class="footer-logo" alt="Logo"/></a>
+                <br />
+                <br />
+                <p>Cool Space Facts &copy; 2023</p>
+                <p>Website created by Sean Cruickshank</p>
+                <br />
+                <br />
+            </div>
+            
         </div>
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
-    <script type="module" src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
     <script>
         
     </script>

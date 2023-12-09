@@ -53,11 +53,18 @@ sizeList.forEach((item) => {
           <p>${item.factList}</p>
         </div>
         `;
-
-    sidebarHTML += 
+    if (item.id === 'size-0') {
+        sidebarHTML +=
+            `
+          <a class="nav-side-item ${item.id} js-nav-side-item" href="#${item.id}">${item.title}</a>
         `
+    } else {
+        sidebarHTML +=
+            `
           <a class="nav-side-item ${item.id}" href="#${item.id}">${item.title}</a>
         `
+    }
+    
     document.querySelector('.js-size-body').innerHTML = sizeHTML;
     document.querySelector('.js-nav-side-content').innerHTML = sidebarHTML;
 
@@ -84,22 +91,21 @@ document.querySelectorAll('.nav-side-item')
     });
 */
 
+//Highlights entries on sidenav based on position on the page
 window.addEventListener('scroll', () => {
-    const position = Math.floor((scrollY) / 500);
-    console.log(position);
-    console.log(sizeList.length);
+    const position = Math.floor((scrollY + 375) / 750);
     if (position < sizeList.length) {
-        sideNavHighlight(position);
+        NavSideHighlight(position);
     }
 
 });
 
 //Highlights the active card div and removes highlights from all others
-function sideNavHighlight(index) {
+function NavSideHighlight(index) {
     const test = document.querySelector(`.size-${index}`);
-    const hello = Array.from(document.getElementsByClassName('js-size-card'));
+    const hello = Array.from(document.getElementsByClassName('js-nav-side-item'));
     hello.forEach((test) => {
-        test.classList.remove('js-size-card');
+        test.classList.remove('js-nav-side-item');
     });
-    test.classList.add('js-size-card');
+    test.classList.add('js-nav-side-item');
 }
