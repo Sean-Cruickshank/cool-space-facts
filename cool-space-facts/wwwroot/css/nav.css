@@ -17,7 +17,7 @@
     background-color: black;
     height: 50px;
     margin-top: 0;
-    border-bottom: 2px solid darkgoldenrod;
+    border-bottom: 2px solid #111;
 }
 
     .nav-top ul {
@@ -112,8 +112,7 @@
     text-align: center;
     position: fixed;
     overflow-y: scroll;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+    padding:4px;
 }
 
 .nav-side-link {
@@ -129,7 +128,7 @@
 .nav-side-item {
     color: white;
     display: block;
-    padding: 5px;
+    padding: 5px 1px;
     margin: 4px;
     text-decoration: none;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -211,7 +210,8 @@
     }
 
     .nav-side-item {
-        font-size: 0.7rem;
+        font-size: 0.65rem;
+        margin: 1px;
     }
 
     .nav-side-width {
@@ -279,7 +279,8 @@
     }
 
     .nav-side-item {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
+        margin: 0;
     }
 
     .nav-side-width {

@@ -1,4 +1,74 @@
-﻿
+﻿.home-intro {
+    margin-bottom: 150px;
+}
+
+.home-intro, .home-body {
+    text-align: center;
+}
+
+    .home-intro .header-a {
+        margin-bottom: 50px;
+        position: relative;
+        z-index: 10;
+        -webkit-text-stroke: 2px black;
+    }
+
+    .home-intro .header-b {
+        position: relative;
+        z-index: 10;
+        -webkit-text-stroke: 1px black;
+    }
+
+    .home-intro img {
+        width: calc(100% - 150px);
+        position: absolute;
+        left: 150px;
+        z-index: 1;
+    }
+
+.home-card {
+    padding: 10px;
+    margin-bottom: 80px;
+    background-color: rgba(0,0,0,0.6);
+    min-height: 400px;
+    border: 3px solid #111;
+    border-radius: 10px;
+}
+
+    .home-card h2 {
+        color: white;
+    }
+
+    .home-card p, .home-card-disclaimer p {
+        font-size: 1.5rem;
+    }
+
+.home-card-disclaimer {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 80px;
+    background-color: rgba(50,0,0,0.6);
+    min-height: 200px;
+    border: 3px solid #400;
+    border-radius: 10px;
+}
+
+    .home-card h2, .home-card-disclaimer h2 {
+        margin-bottom: 30px;
+        font-family: 'OCR A';
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
+
+    .home-card-disclaimer h2 {
+        color: lightcoral;
+    }
+
+    .home-card-disclaimer p {
+        color: lightcoral;
+    }
+       
 
 /* @media screen size - Extra Large+ */
 @media only screen and (min-width: 1120px) {
@@ -6,20 +76,46 @@
 
 /* @media screen size - Large+ */
 @media only screen and (min-width: 992px) {
+    .home-bg-medium {
+        display: none;
+    }
 }
 
 /* @media screen size - Large */
-@media only screen and (min-width: 1120px) and (max-width: 1199.999px) {
+@media only screen and (min-width: 992px) and (max-width: 1199.999px) {
+
 }
 
 /* @media screen size - Medium */
 @media only screen and (min-width: 768px) and (max-width: 991.999px) {
+
+    .home-intro {
+        margin-bottom: 170px;
+    }
+    
+    .home-bg-large {
+        display: none;
+    }
 }
 
 /* @media screen size - Small */
 @media only screen and (min-width: 576px) and (max-width: 767.999px) {
+
+    .home-intro img {
+        left: 130px;
+        width: calc(100% - 130px);
+    }
 }
 
 /* @media screen size - Extra Small */
 @media only screen and (max-width: 575.999px) {
+
+    .home-intro {
+        margin-bottom: 70px;
+    }
+    
+        .home-intro img {
+            left: 130px;
+            width: calc(100% - 130px);
+        }
 }

@@ -1,16 +1,5 @@
 ﻿/* Size */
 
-.size-card {
-    min-height: 750px;
-}
-
-    .size-card:nth-child(even) {
-    }
-
-.size-card-title {
-    padding-top: 50px;
-}
-
 /* @media screen size - Extra Large+ */
 @media only screen and (min-width: 1120px) {
 }

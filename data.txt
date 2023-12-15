@@ -1,0 +1,100 @@
+Size
+1	International Space Station - 108m Photo
+2	Deimos - 12.4km
+3	Neutron Stars - 20km
+4	Vesta - 525km
+4	Ceres - 946km
+5	Pluto - 2,377km photo
+6	The Moon - 3,475km photo
+7	Mercury - 4,879km
+8	Ganymede - 5268km
+9	Mars - 6779km photo
+10	White Dwarf Stars - 11,200km - 24,000km
+11	Venus - 12,104km
+12	Earth - 12742km photo
+13	Neptune - 49,244km photo
+14	Uranus - 50,724km photo
+15	Saturn - 116,460km | Saturn's Rings - 282,000km photo
+16	Jupiter - 139,820km photo
+17	Red Dwarf Stars - 70,000km - 350,000km
+18	GQ Lupi b (largest exoplanet) - 930,000km
+19	The Sun - 1,392,700km photo
+20	Sagittarius A - 51,800,000km
+21	UY Scuti - 2,376,500,000km
+22	TON 618 - 1,300AU
+23	Oort Cloud - 800,000AU
+24	Eagle Nebula - 70ly photo
+25	Milky Way - 105,700ly
+26	Andromeda - 152,000ly photo
+27	ESO 383-G 076 (largest galaxy) - 1,760,000ly
+28	Laniakea Supercluster - 520,000,000ly
+29	Hercules-Corona Borealis Great Wall - 10,000,000,000ly
+30	Observable Universe - 93,016,000,000ly
+
+Distance
+1	The Karman line - 100km
+2	Satellies - 160km - 2000km photo
+3	International Space Station - 400km
+4	The Moon - 384,400km
+5	Farthest distance a human has been from Earth - 400,171km
+6	James Webb Space Telescope - 1,500,000km
+7	The Sun - 147,290,000km
+8	1 AU - 150,000,000km
+9	Venus - 38Mkm - 261Mkm
+10	Mars - 54.6Mkm - 401Mkm
+11	Mercury - 82.2Mkm - 222Mkm
+12	Jupiter - 588Mkm - 968Mkm
+13	Saturn - 1.2Bkm - 1.67Bkm
+14	Uranus - 2.6Bkm - 3.2Bkm
+15	Neptune - 4.3Bkm - 4.54Bkm
+16	Pluto - 4.28Bkm - 4.67Bkm
+17	Heliopause - 18Bkm
+18	Voyager 1 - 24Bkm
+19	1 Light-year - 9,460,730,472,581km
+20	Edge of the Solar System - 15Tkm
+21	Proxima Centauri - 4.246ly
+22	Betelgeuse - 642.5ly
+23	Gaia BH1 (nearest black hole) - 1560ly
+24	Canis Major - 25,000ly
+25	Sagittarius A - 26,670ly
+26	Andromeda - 2.537Mly
+27	JADES-GS-z13-0 - farthest observable galaxy - 33.6Bly
+28	Edge of the Observable Universe - 46.5Bly
+
+Temperature
+1	Absolute Zero - -273.15C
+2	Boomerang Nebula - -272C
+3	Deep Space - -270C
+4	Pluto - -240C - -226C
+5	Ganymede - -203C - -163C
+6	Titan - -183.1C - -179.6C
+7	Mars - -153C - 20C
+8	The Moon - -130C - 120C
+9	Earth - -89.2C - 56.67C
+10	Mercury - 167C
+11	Venus - 464C
+12	Red (Type M) Dwarf Stars - 2,500K - 3,700K
+13	Yellow (Type G) Stars - 5,200K - 6,000K - The Sun - 5,600C
+14	Centre of the Earth - 6,000C
+15	White Dwarf Stars - 20,000C
+16	Blue Stars - 35,000K
+17	Centre of the Sun - 15,000,000C
+18	Supernovae - 100,000,000,000K
+19	Core of a Neutron Star - 1,000,000,000,000K
+
+Speed
+1	Venus's rotation - 6.52km/h
+2	Earth's rotation - 1600km/h
+3	Moon's orbit around the Earth - 3,683km/h
+4	Pluto's orbit around the sun - 17,096km/h
+5	International Space Station - 28,000km/h
+6	Jupiter's rotation - 43,000km/h
+7	Voyager 1 - 61,500km/h
+8	Earth's orbit around the Sun - 107,000km/h
+9	Venus's orbit - 126,077km/h
+10	Mercury's orbit - 170,505km/h
+11	Parker Solar Probe - 635,266km/h
+12	Sun's orbit around the galaxy - 828,000km/h
+13	S2 - 27,540,000km/h
+14	PSR J1748-2446ad (fastest spinning neutron star) - 252,000,000km/h
+15	Speed of light - 1,079,252,848km/h

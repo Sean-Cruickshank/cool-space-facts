@@ -3,11 +3,35 @@ html {
   position: relative;
   min-height: 100%;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  overflow-x: hidden;
+
+  background-color: black;
 }
 
 body {
     min-height: 100%;
+}
+
+p {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Presets */
+
+.header-a {
+    color: white;
+    font-family: 'OCR A';
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 10rem;
+}
+
+.header-b {
+    color: white;
+    font-family: 'OCR A';
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 3rem;
 }
 
 .link-a {
@@ -23,18 +47,21 @@ body {
 /* Shared Layout */
 
 #shared-layout-body {
-    background-color: blue;
     min-height: 500px;
     padding: 30px;
     margin: 0px;
-    margin-top: 50px;
+    margin-top: 20px;
+    padding: 0;
     width: calc(100% - 150px);
     float: left;
+    background-color: black;
 }
 
 .view-body {
-    background-color: green;
+    background-image: url(/images/site/back.png);
+    background-size: 25%;
     min-height: 800px;
+    padding: 30px;
 }
 
 /* Footer */
@@ -82,6 +109,35 @@ body {
         color: white;
     }
 
+/* Cards */
+
+.compare-card {
+    margin: 50px;
+    padding: 50px;
+    text-align: left;
+}
+
+.compare-card:nth-child(even) {
+    text-align: right;
+}
+
+.card-image {
+    width: 300px;
+}
+
+.card-title {
+    color: green;
+    padding-top: 50px;
+}
+
+.card-diameter {
+    color: red;
+}
+
+.card-fact {
+    color: blue;
+}
+
 /* @media screen size - Extra Large+ */
 @media only screen and (min-width: 1120px) {
 
@@ -93,17 +149,38 @@ body {
 }
 
 /* @media screen size - Large */
-@media only screen and (min-width: 1120px) and (max-width: 1199.999px) {
+@media only screen and (min-width: 992px) and (max-width: 1199.999px) {
+    .header-a {
+        font-size: 8rem;
+    }
 
+    .header-b {
+        font-size: 2.5rem;
+    }
 }
 
 /* @media screen size - Medium */
 @media only screen and (min-width: 768px) and (max-width: 991.999px) {
+    .header-a {
+        font-size: 6rem;
+    }
 
+    .header-b {
+        font-size: 2.25rem;
+    }
 }
 
 /* @media screen size - Small */
 @media only screen and (min-width: 576px) and (max-width: 767.999px) {
+
+    .header-a {
+        font-size: 4.2rem;
+    }
+
+    .header-b {
+        font-size: 1.75rem;
+    }
+    
     #shared-layout-body {
         width: calc(100% - 130px);
     }
@@ -116,6 +193,14 @@ body {
 
 /* @media screen size - Extra Small */
 @media only screen and (max-width: 575.999px) {
+
+    .header-a {
+        font-size: 2.75rem;
+    }
+
+    .header-b {
+        font-size: 1.25rem;
+    }
 
     #shared-layout-body {
         width: calc(100% - 130px);

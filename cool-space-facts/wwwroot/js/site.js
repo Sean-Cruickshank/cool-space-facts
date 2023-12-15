@@ -5,15 +5,15 @@ function setEarthImage(today) {
     const todayTime = today.format('HH');
     let numSwitch = 0;
     if (todayTime >= 0 && todayTime < 6) {
-        earthImage.innerHTML = '<img id="nav-earth-image" src="/earth-night.png" />';
+        earthImage.innerHTML = '<img id="nav-earth-image" src="/images/site/earth-night.png" />';
     } else if (todayTime >= 6 && todayTime < 10) {
-        earthImage.innerHTML = '<img id="nav-earth-image" src="/earth-dawn.png" />';
+        earthImage.innerHTML = '<img id="nav-earth-image" src="/images/site/earth-dawn.png" />';
     } else if (todayTime >= 10 && todayTime < 17) {
-        earthImage.innerHTML = '<img id="nav-earth-image" src="/earth-day.png" />';
+        earthImage.innerHTML = '<img id="nav-earth-image" src="/images/site/earth-day.png" />';
     } else if (todayTime >= 17 && todayTime < 21) {
-        earthImage.innerHTML = '<img id="nav-earth-image" src="/earth-dusk.png" />';
+        earthImage.innerHTML = '<img id="nav-earth-image" src="/images/site/earth-dusk.png" />';
     } else if (todayTime >= 21 && todayTime < 23) {
-        earthImage.innerHTML = '<img id="nav-earth-image" src="/earth-night.png" />';
+        earthImage.innerHTML = '<img id="nav-earth-image" src="/images/site/earth-night.png" />';
     }
 }
 
