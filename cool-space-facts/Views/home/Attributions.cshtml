@@ -3,5 +3,36 @@
 }
 
 <div class="view-body">
-
+    <div class="row container-fluid attributions-intro">
+        <div class="col-6 attribution-radio-select">
+            <h3>Sort by</h3>
+            <label class="attribution-radio">
+                <input id="radio-name" type="radio" name="search-filter" value="name" checked="checked" />
+                Name
+            </label>
+            <label class="attribution-radio">
+                <input id="radio-page" type="radio" name="search-filter" value="page" />
+                Page
+            </label>
+            <label class="attribution-radio">
+                <input id="radio-source" type="radio" name="search-filter" value="source" />
+                Source
+            </label>
+        </div>
+        <div class="col-6 attribution-searchbar">
+            <input type="text" id="myInput" placeholder="Search">
+        </div>
+    </div>
+    <div class="attributions-table">
+        <table id="attributionsTable" class="attributionsTable">
+            <tr>
+                <th>Name:</th>
+                <th>Page:</th>
+                <th>Source:</th>
+            </tr>
+        </table>
+    </div>
+    
 </div>
+
+<script type="module" src="~/js/attributions.js" asp-append-version="true"></script>
