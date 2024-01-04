@@ -14,12 +14,21 @@
 
 /* @media screen size - Medium */
 @media only screen and (min-width: 768px) and (max-width: 991.999px) {
+    .compare-card {
+        text-align: center !important;
+    }
 }
 
 /* @media screen size - Small */
 @media only screen and (min-width: 576px) and (max-width: 767.999px) {
+    .compare-card {
+        text-align: center !important;
+    }
 }
 
 /* @media screen size - Extra Small */
 @media only screen and (max-width: 575.999px) {
+    .compare-card {
+        text-align: center !important;
+    }
 }

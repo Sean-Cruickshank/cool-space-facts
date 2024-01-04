@@ -112,9 +112,9 @@ p {
 /* Cards */
 
 .compare-card {
-    margin: 50px;
-    padding: 50px;
+    padding-top: 100px;
     text-align: left;
+    height: 1000px;
 }
 
 .compare-card:nth-child(even) {
@@ -122,7 +122,7 @@ p {
 }
 
 .card-image {
-    width: 300px;
+    width: 80%;
 }
 
 .card-title {
@@ -130,7 +130,7 @@ p {
     padding-top: 50px;
 }
 
-.card-diameter {
+.card-diameter, .card-distance, .card-temperature, .card-speed {
     color: red;
 }
 

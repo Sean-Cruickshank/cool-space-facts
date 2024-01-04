@@ -1,4 +1,6 @@
-﻿.home-intro {
+﻿/* Home Page */
+
+.home-intro {
     margin-bottom: 150px;
 }
 
@@ -101,31 +103,76 @@
         color: lightcoral;
     }
 
-    .attribution-radio-select {
-        text-align: center;
-        background-color: green;
+/* Attributions Page */
+
+.attributions-intro {
+    background-color: rgba(0,0,0,0.8);
+    margin: 0;
+    margin-top: 10px;
+    padding: 4px;
+    border: solid 2px white;
+}
+
+.attribution-radio-select, .attribution-searchbar {
+    text-align: center;
+}
+
+    .attribution-radio-select h3, .attribution-searchbar h3 {
+        color: white;
+        text-transform: uppercase;
+        font-family: 'OCR A';
+        font-size: 2rem;
     }
+
+.attribution-radio {
+    color: white;
+    padding: 4px;
+    font-size: 1.2rem;
+}  
 
     .attribution-searchbar {
         justify-content: right;
-        background-color: red;
     }
 
-    .attributions-table {
-        background-color: blue;
-        padding: 6px;
-    }
+.attributions-table {
+    margin-top: 10px;
+    background-color: rgba(0,0,0,0.5);
+    border: solid 2px white;
+    width: 100%;
+    font-size: 1.5rem;
+}
 
-    .attributions-intro {
-        background-color:orange;
-        margin: 0;
+    .attributions-table th {
+        background-color: black;
         padding: 4px;
+        padding-left: 10px;
+        width: 25%;
+        height: 50px;
+        color: gray;
+        font-size: 1.8rem;
     }
+
+    .attributions-table td {
+        padding: 4px;
+        padding-left: 10px;
+    }
+
+    .attributions-table tr {
+        background-color: rgba(50,50,50,0.5);
+        height: 50px;
+    }
+
+    .attributions-table tr:nth-child(odd) {
+        background-color: rgba(25,25,25,0.5);
+    }
+
+.tableHeaderBold {
+    font-weight: 900;
+    color: white !important;
+}
 
 #myInput {
-    background-image: url('/css/searchicon.png'); /* Add a search icon to input */
-    background-position: 10px 12px; /* Position the search icon */
-    background-repeat: no-repeat;
+    background-position: 10px 12px;
     width: 80%;
     font-size: 16px;
     padding: 4px 20px 3px 10px;
@@ -135,14 +182,7 @@
 
 #attributionsTable {
     color: white;
-}
-
-    #attributionsTable th {
-        width: 30%;
-    }
-
-.attribution-radio {
-    color: white;
+    width: 100%;
 }
        
 
@@ -187,6 +227,16 @@
     .home-card h2, .home-card-disclaimer h2 {
         font-size: 3rem;
     }
+
+    /* Attributions Page */
+
+    .attributions-table {
+        font-size: 1.3rem;
+    }
+
+        .attributions-table th {
+            font-size: 1.5rem;
+        }
 }
 
 /* @media screen size - Medium */
@@ -215,6 +265,16 @@
     .home-card h2, .home-card-disclaimer h2 {
         font-size: 3.5rem;
     }
+
+    /* Attributions Page */
+
+    .attributions-table {
+        font-size: 1.1rem;
+    }
+
+        .attributions-table th {
+            font-size: 1.3rem;
+        }
 }
 
 /* @media screen size - Small */
@@ -247,6 +307,27 @@
 
     .home-card h2, .home-card-disclaimer h2 {
         font-size: 2.7rem;
+    }
+
+    /* Attributions Page */
+
+    .attributions-table {
+        font-size: 0.9rem;
+    }
+
+        .attributions-table th {
+            padding: 4px;
+            padding-left: 5px;
+            font-size: 1.1rem;
+        }
+
+        .attributions-table td {
+            padding: 4px;
+            padding-left: 5px;
+        }
+
+    .attribution-radio-select h3, .attribution-searchbar h3 {
+        font-size: 1.6rem;
     }
 }
 
@@ -289,5 +370,26 @@
     .home-card a div {
         padding: 4px;
         min-height: 300px;
+    }
+
+    /* Attributions Page */
+
+    .attributions-table {
+        font-size: 0.7rem;
+    }
+
+        .attributions-table th {
+            padding: 4px;
+            padding-left: 5px;
+            font-size: 0.9rem;
+        }
+
+        .attributions-table td {
+            padding: 4px;
+            padding-left: 5px;
+        }
+
+    .attribution-radio-select h3, .attribution-searchbar h3 {
+        font-size: 1.6rem;
     }
 }

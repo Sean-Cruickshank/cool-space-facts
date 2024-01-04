@@ -12,6 +12,7 @@ const sizeListId = sizeList.map((item, index) => {
 
 let sizeHTML = '';
 let sidebarHTML = '';
+let factCount = 0;
 
 
 //Generates HTML cards for each entry in sizeList
@@ -22,14 +23,41 @@ sizeList.forEach((item) => {
         factListHTML += `<p class="card-fact">${fact}</p>`;
     }
 
-    sizeHTML += `
+    if (factCount % 2 === 0) {
+        sizeHTML += `
         <div id="${item.id}" class="compare-card">
-            <img class="card-image" src="${item.image}" title="${item.imageDesc}">
-            <h1 class="card-title">${item.title}</h1>
-            <p class="card-diameter">Diameter: ${item.size}</p>
-            ${factListHTML}
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <img class="card-image" src="${item.image}" title="${item.imageDesc}">
+                </div>
+                <div class="col-md-6 col-12">
+                    <h1 class="card-title">${item.title}</h1>
+                    <p class="card-diameter">Diameter: ${item.size}</p>
+                    ${factListHTML}
+                </div>
+            </div>
         </div>
         `;
+        factCount++;
+    } else {
+        sizeHTML += `
+        <div id="${item.id}" class="compare-card">
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <h1 class="card-title">${item.title}</h1>
+                    <p class="card-diameter">Diameter: ${item.size}</p>
+                    ${factListHTML}
+                </div>
+                <div class="col-md-6 col-12">
+                    <img class="card-image" src="${item.image}" title="${item.imageDesc}">
+                </div>
+            </div>
+        </div>
+        `;
+        factCount++;
+    }
+
+    
 
     if (item.id === 'size-0') {
         sidebarHTML +=
@@ -48,30 +76,9 @@ sizeList.forEach((item) => {
 
 });
 
-
-//When the user hovers their mouse over the div for a card, highlight the corresponding entry in the sidenav
-/*
-document.querySelectorAll('.size-card')
-    .forEach((content, index) => {
-        content.addEventListener('wheel', () => {
-            sideNavHighlight(index);
-        });
-    });
-*/
-
-//When the user clicks an entry in the sidenav, highlight that entry
-/*
-document.querySelectorAll('.nav-side-item')
-    .forEach((content, index) => {
-        content.addEventListener('click', () => {
-            sideNavHighlight(index);
-        });
-    });
-*/
-
 //Highlights entries on sidenav based on position on the page
 window.addEventListener('scroll', () => {
-    const position = Math.floor((scrollY + 375) / 750);
+    const position = Math.floor((scrollY + 500) / 1000);
     if (position < sizeList.length) {
         NavSideHighlight(position);
     }

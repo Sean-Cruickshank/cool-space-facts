@@ -4,32 +4,43 @@
 
 <div class="view-body">
     <div class="row container-fluid attributions-intro">
-        <div class="col-6 attribution-radio-select">
-            <h3>Sort by</h3>
-            <label class="attribution-radio">
-                <input id="radio-name" type="radio" name="search-filter" value="name" checked="checked" />
-                Name
-            </label>
-            <label class="attribution-radio">
-                <input id="radio-page" type="radio" name="search-filter" value="page" />
-                Page
-            </label>
-            <label class="attribution-radio">
-                <input id="radio-source" type="radio" name="search-filter" value="source" />
-                Source
-            </label>
+        <div class="col-sm-6 col-12 attribution-radio-select">
+            <h3>Sort by:</h3>
+            <div class="row">
+                <div class="col-6">
+                    <label class="attribution-radio">
+                        <input id="radio-name" type="radio" name="search-filter" value="name" checked="checked" />
+                        Name
+                    </label>
+                </div>
+                <div class="col-6">
+                    <label class="attribution-radio">
+                        <input id="radio-page" type="radio" name="search-filter" value="page" />
+                        Page
+                    </label>
+                </div>
+                <div class="col-6">
+                    <label class="attribution-radio">
+                        <input id="radio-source" type="radio" name="search-filter" value="source" />
+                        Source
+                    </label>
+                </div>
+                <div class="col-6">
+                    <label class="attribution-radio">
+                        <input id="radio-licence" type="radio" name="search-filter" value="licence" />
+                        Licence
+                    </label>
+                </div>
+            </div>
         </div>
-        <div class="col-6 attribution-searchbar">
+        <div class="col-sm-6 col-12 attribution-searchbar">
+            <h3>Search:</h3>
             <input type="text" id="myInput" placeholder="Search">
         </div>
     </div>
     <div class="attributions-table">
         <table id="attributionsTable" class="attributionsTable">
-            <tr>
-                <th>Name:</th>
-                <th>Page:</th>
-                <th>Source:</th>
-            </tr>
+
         </table>
     </div>
     

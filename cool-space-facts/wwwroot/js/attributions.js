@@ -1,14 +1,41 @@
 ﻿import { attributionsList } from '../js/data/attributionsdata.js';
 
+//Sorts attributionsList alphabetically
+attributionsList.sort((a, b) => a.name.localeCompare(b.name))
+
 //Populates attributionsTable with data from attributionsdata.js
 let attributionsHTML = `<tr>
-    <th>Name:</th>
-                <th>Page:</th>
-                <th>Source:</th>
+    <th class="attributions-table-name tableHeaderBold">Name:</th>
+
+                <th class="attributions-table-pages">Pages:</th>
+                <th class="attributions-table-source">Source:</th>
+                <th class="attributions-table-licence">Licence:</th>
             </tr`;
 
 attributionsList.forEach((item) => {
-    attributionsHTML += `
+    if (item.sourceB !== undefined) {
+        attributionsHTML += `
+        <tr>
+            <td>${item.name}</td>
+            <td>${item.page}</td>
+            <td>
+                <a target="_blank" href="${item.source}">
+                    ${item.sourceName}
+                </a>
+                /
+                <a target="_blank" href="${item.sourceB}">
+                    ${item.sourceBName}
+                </a>
+            </td>
+            <td>
+                <a target="_blank" href="${item.licence}">
+                    ${item.licenceName}
+                </a>
+            </td>
+        </tr>
+        `;
+    } else {
+        attributionsHTML += `
         <tr>
             <td>${item.name}</td>
             <td>${item.page}</td>
@@ -17,33 +44,66 @@ attributionsList.forEach((item) => {
                     ${item.sourceName}
                 </a>
             </td>
-
+            <td>
+                <a target="_blank" href="${item.licence}">
+                    ${item.licenceName}
+                </a>
+            </td>
+        </tr>
         `;
+    }
+    
     document.querySelector('.attributionsTable').innerHTML = attributionsHTML;
 })
 
 //Generates click events for the radio buttons
 let radioFilter = 'name';
 const radioName = document.getElementById('radio-name');
+
+const nameBold = document.querySelector('.attributions-table-name');
+const pagesBold = document.querySelector('.attributions-table-pages');
+const sourceBold = document.querySelector('.attributions-table-source');
+const licenceBold = document.querySelector('.attributions-table-licence');
+
 radioName.addEventListener('click', () => {
     radioFilter = 'name';
     attributionSearch();
+    tableHeaderBold(nameBold);
+});
+const radioLicence = document.getElementById('radio-licence');
+radioLicence.addEventListener('click', () => {
+    radioFilter = 'licence';
+    attributionSearch();
+    tableHeaderBold(licenceBold);
 });
 const radioPage = document.getElementById('radio-page');
 radioPage.addEventListener('click', () => {
     radioFilter = 'page';
     attributionSearch();
+    tableHeaderBold(pagesBold);
 });
 const radioSource = document.getElementById('radio-source');
 radioSource.addEventListener('click', () => {
     radioFilter = 'source';
     attributionSearch();
+    tableHeaderBold(sourceBold);
 });
 
 const myInputEvent = document.getElementById('myInput');
 myInputEvent.addEventListener('keyup', () => {
     attributionSearch();
 });
+
+
+//Displays custom CSS for the table th of the radio button selected
+function tableHeaderBold(exception) {
+    nameBold.classList.remove('tableHeaderBold');
+    pagesBold.classList.remove('tableHeaderBold');
+    sourceBold.classList.remove('tableHeaderBold');
+    licenceBold.classList.remove('tableHeaderBold');
+
+    exception.classList.add('tableHeaderBold');
+}
 
 
 //Enables searchbar functionality and filters results by radio button selected
@@ -61,7 +121,9 @@ function attributionSearch() {
             td = tr[i].getElementsByTagName("td")[1];
         } else if (radioFilter === 'source') {
             td = tr[i].getElementsByTagName("td")[2];
-        }
+        } else if (radioFilter === 'licence') {
+            td = tr[i].getElementsByTagName("td")[3];
+        } 
 
         if (td) {
             txtValue = td.textContent || td.innerText;
