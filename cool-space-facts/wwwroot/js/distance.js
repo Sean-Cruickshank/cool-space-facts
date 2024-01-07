@@ -26,14 +26,19 @@ distanceList.forEach((item) => {
     if (factCount % 2 === 0) {
         distanceHTML += `
         <div id="${item.id}" class="compare-card">
-            <div class="row">
-                <div class="col-md-6 col-12">
-                    <img class="card-image" src="${item.image}" title="${item.imageDesc}">
+            <div class="row justify-content-around">
+                <div class="col-10 card-title-container">
+                    <h1 class="card-count">- ${factCount + 1} -</h1>
+                    <h1 class="card-title">${item.title}</h1>
+                    <p class="card-diameter">Distance: ${item.distance}</p>
                 </div>
                 <div class="col-md-6 col-12">
-                    <h1 class="card-title">${item.title}</h1>
-                    <p class="card-diameter">Distance from Earth: ${item.distance}</p>
-                    ${factListHTML}
+                    <img class="card-image" src="${item.image}" title="${item.imageDesc}">
+                    <p class="card-image-caption">${item.imageDesc} by ${item.imageCaption}</p>
+                </div>
+                <div class="card-fact-container col-md-6 col-12">
+                    <h2>Facts:</h2>
+                    <p>${factListHTML}</p>
                 </div>
             </div>
         </div>
@@ -42,14 +47,19 @@ distanceList.forEach((item) => {
     } else {
         distanceHTML += `
         <div id="${item.id}" class="compare-card">
-            <div class="row">
-                <div class="col-md-6 col-12">
+            <div class="row justify-content-around">
+                <div class="col-10 card-title-container">
+                    <h1 class="card-count">- ${factCount + 1} -</h1>
                     <h1 class="card-title">${item.title}</h1>
-                    <p class="card-distance">Distance from Earth: ${item.distance}</p>
-                    ${factListHTML}
+                    <p class="card-diameter">Distance: ${item.distance}</p>
+                </div>
+                <div class="card-fact-container col-md-6 col-12">
+                    <h2>Facts:</h2>
+                    <p>${factListHTML}</p>
                 </div>
                 <div class="col-md-6 col-12">
                     <img class="card-image" src="${item.image}" title="${item.imageDesc}">
+                    <p class="card-image-caption">${item.imageDesc} by ${item.imageCaption}</p>
                 </div>
             </div>
         </div>

@@ -3,12 +3,13 @@ html {
   position: relative;
   min-height: 100%;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+  overflow-x: hidden;
   background-color: black;
 }
 
 body {
     min-height: 100%;
+    max-width: 100%;
     background-color: black;
 }
 
@@ -24,7 +25,8 @@ p {
     font-family: 'OCR A';
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 8rem;
+    font-size: 15rem;
+    width: 100%;
 }
 
 .header-b {
@@ -32,7 +34,7 @@ p {
     font-family: 'OCR A';
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 3rem;
+    font-size: 9rem;
 }
 
 .link-a {
@@ -44,6 +46,14 @@ p {
     .link-a:hover {
         color: darkgoldenrod;
     }
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: darkgoldenrod;
+}
 
 /* Shared Layout */
 
@@ -108,35 +118,6 @@ p {
     .footer-link:hover, .footer-sublink:hover {
         color: white;
     }
-
-/* Cards */
-
-.compare-card {
-    padding-top: 100px;
-    text-align: left;
-    height: 1000px;
-}
-
-.compare-card:nth-child(even) {
-    text-align: right;
-}
-
-.card-image {
-    width: 80%;
-}
-
-.card-title {
-    color: green;
-    padding-top: 50px;
-}
-
-.card-diameter, .card-distance, .card-temperature, .card-speed {
-    color: red;
-}
-
-.card-fact {
-    color: blue;
-}
 
 /* @media screen size - Extra Large+ */
 @media only screen and (min-width: 1120px) {

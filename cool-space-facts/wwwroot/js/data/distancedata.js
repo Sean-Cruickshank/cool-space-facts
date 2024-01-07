@@ -4,6 +4,7 @@
         distance: '100km',
         image: '/images/compare/karman_line.jpg',
         imageDesc: 'An image of the Thermosphere, where the Kármán Line is located',
+        imageCaption: 'Daniel Olah',
         factList: [
             'The Kármán Line is roughly the altitude where the air becomes too thin for traditional aircraft to fly',
             'It is considered by many to be the boundary between Earth and Space'
@@ -14,6 +15,7 @@
         distance: '160km+',
         image: '/images/compare/satellite.jpg',
         imageDesc: 'A satellite flying through the upper atmosphere',
+        imageCaption: 'NASA',
         factList: [
             'The first man-made satellite was Sputnik 1, launched by the USSR in 1957',
             'As of January 2024, there are 9185 man-made satellites in orbit around the Earth',
@@ -26,6 +28,7 @@
         distance: '400km',
         image: '/images/compare/iss.jpg',
         imageDesc: 'A view of the International Space Station over Earth',
+        imageCaption: 'NASA',
         factList: [
             'The ISS contains about as much living space as a 6-bedroom house, and weighs 420,000kg',
             'The ISS was assembled in pieces across 42 seperate rocket launches',
@@ -38,6 +41,7 @@
         distance: '384,400km',
         image: '/images/compare/moon.jpg',
         imageDesc: 'The Moon in waning gibbous',
+        imageCaption: 'Ankit Raj',
         factList: [
             'The Moon is believed to have formed when a planet the size of Mars collided with the Earth billions of years ago',
             'It is the 5th largest moon in the solar system',
@@ -49,7 +53,8 @@
         title: 'The farthest distance a human has been from Earth',
         distance: '400,171km',
         image: '/images/compare/apollo_13.jpg',
-        imageDesc: 'An image of the Apollo 13 space crew',
+        imageDesc: 'An image of the Apollo 13 service module',
+        imageCaption: 'NASA',
         factList: [
             'The farthest distance any human has been from the Earth was set by the crew of Apollo 13 in April 1970',
             'They achieved this distance while in orbit around the far side of the Moon!'
@@ -60,6 +65,7 @@
         distance: '1,500,000km',
         image: '/images/compare/james_webb.jpg',
         imageDesc: 'An image of the James Webb Space Telescope',
+        imageCaption: 'NASA Goddard',
         factList: [
             'The James Webb Space Telescope is an orbiting infrared observatory launched in December 2021',
             'It orbits at the Lagrange 2 point, a point in space where the gravity of the Earth and Sun allow for a stable orbit',
@@ -71,6 +77,7 @@
         distance: '38,000,000km - 261,000,000km',
         image: '/images/compare/venus.jpg',
         imageDesc: 'An image of Venus',
+        imageCaption: 'NASA Goddard',
         factList: [
             'Venus is the hottest planet in the solar system',
             'It is the second largest of the rocky planets, only narrowly smaller than Earth',
@@ -83,6 +90,7 @@
         distance: '54,600,000km - 401,000,000km',
         image: '/images/compare/mars.jpg',
         imageDesc: 'An image of Mars',
+        imageCaption: 'NASA',
         factList: [
             'Mars is the second smallest planet in the Solar System after Mercury',
             'It is the outermost of the four rocky planets, orbiting between Earth and the asteroid belt',
@@ -94,6 +102,7 @@
         distance: '82,200,000km - 222,000,000km',
         image: '/images/compare/mercury.jpg',
         imageDesc: 'An image of Mercury',
+        imageCaption: 'NASA',
         factList: [
             'Mercury is the smallest planet in the solar system',
             'It is also the fastest planet, orbiting around the Sun in just 88 Earth days',
@@ -105,6 +114,7 @@
         distance: '147,290,000km',
         image: '/images/compare/sun.jpg',
         imageDesc: 'An image of the Sun',
+        imageCaption: 'NASA',
         factList: [
             'The Sun accounts for 99.8% of the mass of the entire solar system',
             'It is a Type G "Yellow Dwarf" star. Although, despite the name, it is roughly of average size',
@@ -116,6 +126,7 @@
         distance: '940,000,000km',
         image: '/images/compare/earth.jpg',
         imageDesc: 'Cities of Earth at night',
+        imageCaption: 'NASA',
         factList: [
             'The Earth travels nearly 1 billion kilometers every year in orbit around the Sun',
             'If the Earth were to fall out of orbit, directly away from the Sun at the same speed, it would take roughly one year to reach the orbit of Jupiter',
@@ -126,7 +137,8 @@
         title: 'Jupiter',
         distance: '588,000,000km - 968,000,000km',
         image: '/images/compare/jupiter.jpg',
-        imageDesc: 'An image of Jupiter',
+        imageDesc: 'An artists depiction of Jupiter',
+        imageCaption: 'Planet Volumes',
         factList: [
             'Jupiter is the largest and most massive planet in our Solar System',
             'The Great Red Spot is the largest storm on Jupiter at over twice the width of the Earth',
@@ -137,7 +149,8 @@
         title: 'Titan',
         distance: '1.2 Billion km',
         image: '/images/compare/titan.jpg',
-        imageDesc: 'An image of Titan',
+        imageDesc: 'An image of Saturn\'s largest moon, Titan',
+        imageCaption: 'NASA/JPL/Space Science Institute',
         factList: [
             'Titan is the second largest moon in the Solar System, and largest moon of Saturn',
             'It is the most distant object we have successfully landed a spacecraft on. It was visited by the Huygens spaceprobe in January 2005',
@@ -149,7 +162,8 @@
         title: 'Saturn',
         distance: '1.2 Billion km - 1.67 Billion km',
         image: '/images/compare/saturn.jpg',
-        imageDesc: 'An image of Saturn',
+        imageDesc: 'An image of Saturn with rings',
+        imageCaption: 'NASA/JPL',
         factList: [
             'Saturn is the 2nd largest planet in the Solar System',
             'It is also the least dense planet in the Solar System, with an average density lower than water',
@@ -160,7 +174,8 @@
         title: 'Uranus',
         distance: '2.6 Billion km - 3.2 Billion km',
         image: '/images/compare/uranus.jpg',
-        imageDesc: 'An image of Uranus with rings',
+        imageDesc: 'An artists depiction of Uranus with rings',
+        imageCaption: 'Planet Volumes',
         factList: [
             'Uranus is the 3rd largest planet in the solar system, and the largest of the two ice giants',
             'Despite being larger in diameter than Neptune, it is actually less massive',
@@ -173,6 +188,7 @@
         distance: '4.3 Billion km - 4.54 Billion km',
         image: '/images/compare/neptune.jpg',
         imageDesc: 'An image of Neptune',
+        imageCaption: 'NASA',
         factList: [
             'Neptune is the 4th largest planet in the solar system, and smallest of the two ice giants',
             'It is the farthest planet from the Sun in our Solar System',
@@ -184,7 +200,8 @@
         title: 'Pluto',
         distance: '4.28 Billion km - 4.67 Billion km',
         image: '/images/compare/pluto.jpg',
-        imageDesc: 'An image of Pluto',
+        imageDesc: 'An image of Pluto captured by New Horizons',
+        imageCaption: 'NASA',
         factList: [
             'Pluto is the largest dwarf planet in the solar system',
             'It was discovered in 1930, and was, for a long time, considered the solar system\'s 9th planet, until it was reclassified in 2006',
@@ -196,6 +213,7 @@
         distance: '18 Billion km',
         image: '/images/compare/heliopause.jpg',
         imageDesc: 'An artists depiction of the heliopause',
+        imageCaption: 'NASA/JPL-Caltech',
         factList: [
             'The Heliopause marks the edge of the Heliosphere, a giant bubble containing solar wind from the Sun',
             'Once solar wind reaches the Heliopause it is pushed back by the interstellar wind of other stars'
@@ -205,7 +223,8 @@
         title: 'Voyager 1',
         distance: '24 Billion km',
         image: '/images/compare/voyager1.jpg',
-        imageDesc: 'An image of Voyager 1',
+        imageDesc: 'An artists depiction of Voyager 1 flying through space',
+        imageCaption: 'NASA/JPL-Caltech',
         factList: [
             'Voyager 1 is a spacecraft launched in 1977 to explore the outer Solar System',
             'It is the most distant man-made object ever launched into space',
@@ -217,7 +236,8 @@
         title: '1 Light Year',
         distance: '9,460,730,472,581km',
         image: '/images/compare/light_speed.jpg',
-        imageDesc: 'Photons travelling at light speed',
+        imageDesc: 'An illustration of light speed',
+        imageCaption: 'Mathew Schwartz',
         factList: [
             'A light year is the distance light can travel in one year',
             'This is considered to be the upper speed limit of the universe, and therefore no information can travel farther than this distance in one year'
@@ -227,7 +247,8 @@
         title: 'The edge of the Solar System',
         distance: '1.586ly (15 Trillion km)',
         image: '/images/compare/oort_cloud.jpg',
-        imageDesc: 'An illustration of the Oort Cloud',
+        imageDesc: 'A logarithmic diagram of the Solar System, showing the scale of the Oort Cloud',
+        imageCaption: 'NASA/JPL-Caltech',
         factList: [
             'The farthest reach of our Suns influence is the outer edge of the Oort Cloud',
             'That\'s 100, 000 times farther away from the Sun than the Earth is!',
@@ -238,7 +259,8 @@
         title: 'Proxima Centauri',
         distance: '4.246ly',
         image: '/images/compare/proxima_centauri.jpg',
-        imageDesc: 'An artists depiction of Proxima Centauri',
+        imageDesc: 'An image of Proxima Centauri',
+        imageCaption: 'ESA/Hubble',
         factList: [
             'Proxima Centauri is the closest star to Earth after the Sun',
             'It is a Red Dwarf star in the Alpha Centauri star system, where it orbits with two other stars',
@@ -249,7 +271,8 @@
         title: 'Betelgeuse',
         distance: '642.5ly',
         image: '/images/compare/betelgeuse.jpg',
-        imageDesc: 'An artists depiction of Betelgeuse',
+        imageDesc: 'An image of Betelgeuse',
+        imageCaption: 'ESA/Herschel/PACS/L. Decin et al.',
         factList: [
             'Betelgeuse is a Red Supergiant star in the constellation Orion',
             'It is one of the brightest stars in the night sky, and glows orange-red',
@@ -261,7 +284,8 @@
         title: 'Gaia BH1',
         distance: '1,560ly',
         image: '/images/compare/gaia_bh1.jpg',
-        imageDesc: 'An artists depiction of Gaia BH1',
+        imageDesc: 'An artists depiction of the Gaia BH1 binary system',
+        imageCaption: 'By International Gemini Observatory/NOIRLab/NSF/AURA/J. da Silva/Spaceengine/M. Zamani',
         factList: [
             'Gaia BH1 is a binary system containing the nearest known Black Hole to our Solar System',
             'The black hole is around the mass of the Sun, and coexists with another star in the constellation Ophiuchus',
@@ -273,7 +297,8 @@
         title: 'Canis Major Dwarf Galaxy',
         distance: '25,000ly',
         image: '/images/compare/canis_major.jpg',
-        imageDesc: 'An artists depiction of the Canis Major Dwarf galaxy',
+        imageDesc: 'An image of dust clouds in the Canis Major constellation',
+        imageCaption: 'NASA/JPL-Caltech/University of Wisconsin',
         factList: [
             'The Canis Major Dwarf Galaxy is the closest galaxy to the Milky Way',
             'Desipte its close proximity, it wasn\'t discovered until 2003, as it is obscured by dust clouds in the Milky Way',
@@ -284,7 +309,8 @@
         title: 'Sagittarius A',
         distance: '26,670ly',
         image: '/images/compare/sagittarius.jpg',
-        imageDesc: 'An image of Sagittarius A',
+        imageDesc: 'An illustration of a supermassive black hole like Sagittarius A',
+        imageCaption: 'NASA/JPL-Caltech',
         factList: [
             'Sagittarius A is a supermassive black hole at the centre of the Milky Way',
             'It contains around 4 million times the mass of our Sun!',
@@ -295,6 +321,7 @@
         distance: '2,537,000ly',
         image: '/images/compare/andromeda.jpg',
         imageDesc: 'An image of the Andromeda galaxy',
+        imageCaption: 'Guillero Ferla',
         factList: [
             'The Andromeda galaxy is the closest large galaxy to the Milky Way',
             'It is much larger that the Milky Way, containing over 1 trillion stars',
@@ -306,7 +333,8 @@
         title: 'JADES-GS-z13-0',
         distance: '33.6 Billion ly',
         image: '/images/compare/JADES-GS-Z13-0.jpg',
-        imageDesc: 'An artists depiction of JADES-GS-z13-0',
+        imageDesc: 'An image of JADES-GS-z13-0',
+        imageCaption: 'By NASA, ESA, CSA, and STScI, M. Zamani (ESA/Webb), L. Hustak (STScI). Science: B. Robertson (UCSC), S. Tacchella (Cambridge), E. Curtis-Lake (Hertfordshire), S. Carniani (Scuola Normale Superiore), and the JADES Collaboration',
         factList: [
             'JADES-GS-z13-0 is an ancient galaxy discovered in September 2022',
             'It is the oldest and most distant galaxy ever discovered.',
@@ -317,7 +345,8 @@
         title: 'Edge of the Observable Universe',
         distance: '46.5 Billion ly',
         image: '/images/compare/observable_universe.jpg',
-        imageDesc: '',
+        imageDesc: 'An illustration of the observable universe',
+        imageCaption: 'ESA/NASA/JPL-Caltech',
         factList: [
             'The observable universe is a sphere containing everything that can be observed from Earth',
             'Anything beyond this sphere cannot be detected, as no information has had enough time to travel to Earth since the formation of the universe',

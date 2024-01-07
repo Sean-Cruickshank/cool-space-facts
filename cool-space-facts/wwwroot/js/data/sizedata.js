@@ -4,6 +4,7 @@
         size: '108m',
         image: '/images/compare/iss.jpg',
         imageDesc: 'A view of the International Space Station over Earth',
+        imageCaption: 'NASA',
         factList: [
             'The ISS contains about as much living space as a 6-bedroom house, and weighs 420,000kg',
             'The ISS was assembled in pieces across 42 seperate rocket launches',
@@ -15,7 +16,8 @@
         title: 'Deimos',
         size: '12.4km',
         image: '/images/compare/deimos.jpg',
-        imageDesc: 'The moon Deimos',
+        imageDesc: 'The second moon of Mars, Deimos',
+        imageCaption: 'NASA/JPL/Malin Space Science Systems',
         factList: [
             'Deimos is the smallest of the two Martian moons',
             'It orbits the planet every 30 hours',
@@ -26,7 +28,8 @@
         title: 'Neutron Stars',
         size: '20km',
         image: '/images/compare/neutron_star.jpg',
-        imageDesc: 'A neutron star',
+        imageDesc: 'An illustration of a neutron star emitting electromagnetic radiation',
+        imageCaption: 'Scott Wiessinger, Francis Reddy, Jeanette Kazmierczak',
         factList: [
             'Despite their size they can have as much as twice the mass of the Sun!',
             'They are the densest objects in the universe, after black holes',
@@ -38,6 +41,7 @@
         size: '525km',
         image: '/images/compare/vesta.jpg',
         imageDesc: 'The asteroid Vesta',
+        imageCaption: 'NASA/JPL-Caltech/UCLA/MPS/DLR/IDA',
         factList: [
             'Vesta was discovered in Bremen, Germany in 1807 by Heinrich Wilhelm Olbers',
             'Vesta is the largest asteroid in the asteroid field, and second largest object, after Ceres',
@@ -50,6 +54,7 @@
         size: '946km',
         image: '/images/compare/ceres.jpg',
         imageDesc: 'Dwarf planet and asteroid, Ceres',
+        imageCaption: 'NASA/JPL-Caltech/UCLA/MPS/DLR/IDA',
         factList: [
             'Ceres is a dwarf planet in the asteroid belt, between Mars and Jupiter',
             'Ceres is the largest object in the asteroid belt, comprising nearly a quarter of the asteroid belt\'s entire mass!',
@@ -60,7 +65,8 @@
         title: 'Pluto',
         size: '2377km',
         image: '/images/compare/pluto.jpg',
-        imageDesc: 'An image of Pluto',
+        imageDesc: 'An image of Pluto captured by New Horizons',
+        imageCaption: 'NASA',
         factList: [
             'Pluto is the largest dwarf planet in the solar system',
             'It was discovered in 1930, and was, for a long time, considered the solar system\'s 9th planet, until it was reclassified in 2006',
@@ -72,6 +78,7 @@
         size: '3475km',
         image: '/images/compare/moon.jpg',
         imageDesc: 'The Moon in waning gibbous',
+        imageCaption: 'Ankit Raj',
         factList: [
             'The Moon is believed to have formed when a planet the size of Mars collided with the Earth billions of years ago',
             'It is the 5th largest moon in the solar system',
@@ -84,6 +91,7 @@
         size: '4879km',
         image: '/images/compare/mercury.jpg',
         imageDesc: 'An image of Mercury',
+        imageCaption: 'NASA',
         factList: [
             'Mercury is the smallest planet in the solar system',
             'It is also the fastest planet, orbiting around the Sun in just 88 Earth days',
@@ -94,7 +102,8 @@
         title: 'Ganymede',
         size: '5268km',
         image: '/images/compare/ganymede.jpg',
-        imageDesc: 'Jupiter\'s largest moon, Ganymede',
+        imageDesc: 'An image of Jupiter\'s largest moon, Ganymede',
+        imageCaption: 'NASA/JPL',
         factList: [
             'Ganymede is the largest moon in the Solar System. It is larger than both Mercury and Pluto',
             'It orbits Jupiter as one of the four Galilean moons, named after their discoverer, Galileo Galilei',
@@ -106,6 +115,7 @@
         size: '6779km',
         image: '/images/compare/mars.jpg',
         imageDesc: 'An image of Mars',
+        imageCaption: 'NASA',
         factList: [
             'Mars is the second smallest planet in the Solar System after Mercury',
             'It is the outermost of the four rocky planets, orbiting between Earth and the asteroid belt',
@@ -116,7 +126,8 @@
         title: 'White Dwarf Stars',
         size: '11,200km - 24,000km',
         image: '/images/compare/white_dwarf.jpg',
-        imageDesc: 'A white dwarf star',
+        imageDesc: 'An illustration of a White Dwarf Star surrounded by a cloud of debris',
+        imageCaption: 'NASA’s Goddard Space Flight Center/Scott Wiessinger',
         factList: [
             'White Dwarf stars are the remnants of stars that have exhausted all of their fuel',
             'Approximately 97% of stars in the Milky Way will eventually become White Dwarf stars',
@@ -128,6 +139,7 @@
         size: '12,104km',
         image: '/images/compare/venus.jpg',
         imageDesc: 'An image of Venus',
+        imageCaption: 'NASA Goddard',
         factList: [
             'Venus is the hottest planet in the solar system',
             'It is the second largest of the rocky planets, only narrowly smaller than Earth',
@@ -140,6 +152,7 @@
         size: '12,742km',
         image: '/images/compare/earth.jpg',
         imageDesc: 'Cities of Earth at night',
+        imageCaption: 'NASA',
         factList: [
             'Earth is the largest of the rocky planets, and 5th largest planet in our Solar System',
             'It is the densest planet in the solar system.',
@@ -151,6 +164,7 @@
         size: '49,244km',
         image: '/images/compare/neptune.jpg',
         imageDesc: 'An image of Neptune',
+        imageCaption: 'NASA',
         factList: [
             'Neptune is the 4th largest planet in the solar system, and smallest of the two ice giants',
             'It is the farthest planet from the Sun in our Solar System',
@@ -162,7 +176,8 @@
         title: 'Uranus',
         size: '50,724km',
         image: '/images/compare/uranus.jpg',
-        imageDesc: 'An image of Uranus with rings',
+        imageDesc: 'An artists depiction of Uranus with rings',
+        imageCaption: 'Planet Volumes',
         factList: [
             'Uranus is the 3rd largest planet in the solar system, and the largest of the two ice giants',
             'Despite being larger in diameter than Neptune, it is actually less massive',
@@ -174,7 +189,8 @@
         title: 'Red Dwarf Stars',
         size: '70,000km - 350,000km',
         image: '/images/compare/red_dwarf.jpg',
-        imageDesc: 'A red dwarf star',
+        imageDesc: 'An illustration of a binary Red Dwarf system',
+        imageCaption: 'NASA Goddard',
         factList: [
             'Red Dwarf stars can survive for up to 10 trillion of years',
             'The closest star to our solar system, Proxima Centauri, is a red dwarf star',
@@ -185,7 +201,8 @@
         title: 'Saturn',
         size: '116,460km (282,000km with rings)',
         image: '/images/compare/saturn.jpg',
-        imageDesc: 'An image of Saturn',
+        imageDesc: 'An image of Saturn with rings',
+        imageCaption: 'NASA/JPL',
         factList: [
             'Saturn is the 2nd largest planet in the Solar System',
             'It is also the least dense planet in the Solar System, with an average density lower than water',
@@ -196,7 +213,8 @@
         title: 'Jupiter',
         size: '142,984km',
         image: '/images/compare/jupiter.jpg',
-        imageDesc: 'An image of Jupiter',
+        imageDesc: 'An artists depiction of Jupiter',
+        imageCaption: 'Planet Volumes',
         factList: [
             'Jupiter is the largest and most massive planet in our Solar System',
             'The Great Red Spot is the largest storm on Jupiter at over twice the width of the Earth',
@@ -207,7 +225,8 @@
         title: 'GQ Lupi b',
         size: '930,000km',
         image: '/images/compare/gq_lupi_b.jpg',
-        imageDesc: 'An image of GQ Lupi B',
+        imageDesc: 'An illustration of a large exoplanet, similar to GQ Lupi B',
+        imageCaption: 'James Cohen',
         factList: [
             'It is the largest planet ever found, at over 6.5x the diameter of Jupiter',
             'GQ Lupi B was discovered in 2005, and listed as a "confirmed planet" in 2020',
@@ -219,6 +238,7 @@
         size: '1,392,000km',
         image: '/images/compare/sun.jpg',
         imageDesc: 'An image of the Sun',
+        imageCaption: 'NASA',
         factList: [
             'The Sun accounts for 99.8% of the mass of the entire solar system',
             'It is a Type G "Yellow Dwarf" star. Although, despite the name, it is roughly of average size',
@@ -229,7 +249,8 @@
         title: 'Sagittarius A',
         size: '51,800,000km',
         image: '/images/compare/sagittarius.jpg',
-        imageDesc: 'An image of Sagittarius A',
+        imageDesc: 'An illustration of a supermassive black hole like Sagittarius A',
+        imageCaption: 'NASA/JPL-Caltech',
         factList: [
             'Sagittarius A is a supermassive black hole at the centre of the Milky Way',
             'It contains around 4 million times the mass of our Sun!',
@@ -239,7 +260,8 @@
         title: 'UY Scuti',
         size: '2,376,500,000km',
         image: '/images/compare/uy_scuti.jpg',
-        imageDesc: 'An artists depiction of UY Scuti',
+        imageDesc: 'An image of UY Scuti',
+        imageCaption: 'By ESO/Digitized Sky Survey 2 - DSS2',
         factList: [
             'UY Scuti is the largest star ever discovered',
             'By volume it is almost 5 billion times the size of our Sun',
@@ -250,7 +272,8 @@
         title: 'Phoenix A',
         size: '590,500,000,000km',
         image: '/images/compare/phoenix_a.jpg',
-        imageDesc: 'An artists depiction of Phoenix A',
+        imageDesc: 'An illustration of a supermassive black hole like Phoenix A',
+        imageCaption: 'AlexAntropov86',
         factList: [
             'Phoenix A is the largest black hole ever discovered',
             'if the Sun was replaced by Phoenix A its outer edge would reach 100 times farther than the distance to Pluto',
@@ -262,7 +285,8 @@
         title: 'The Oort Cloud',
         size: '800,000AU (119.67 Trillion km)',
         image: '/images/compare/oort_cloud.jpg',
-        imageDesc: 'An illustration of the Oort Cloud',
+        imageDesc: 'A logarithmic diagram of the Solar System, showing the scale of the Oort Cloud',
+        imageCaption: 'NASA/JPL-Caltech',
         factList: [
             'The Oort Cloud is a giant shell of icy debris surrounding the outer edge of the Solar System',
             'It exists at the farthest point of the Sun\'s influence, and may reach as much as halfway the distance to the nearest star, Proxima Centauri',
@@ -275,6 +299,7 @@
         size: '70 Light Years (662.25 Trillion km)',
         image: '/images/compare/eagle_nebula.jpg',
         imageDesc: 'An image of the Eagle Nebula',
+        imageCaption: 'Samuel PASTEUR-FOSSE',
         factList: [
             'The Eagle Nebula resides in the constellation Serpens and is best known for containing the Pillars of Creation',
             'It was discovered in 1745 by Swiss astronomer Jean-Philippe Loyus de Chéseaux',
@@ -285,7 +310,8 @@
         title: 'The Milky Way',
         size: '105,700 Light Years (999.99 Quadrillion km)',
         image: '/images/compare/milky_way.jpg',
-        imageDesc: 'An artists depiction of the Milky Way galaxy',
+        imageDesc: 'An image of the Milky Way galaxy as seen from Earth',
+        imageCaption: 'Graham Holtshausen',
         factList: [
             'The Milky Way is our home galaxy',
             'It is estimated to be around 13.6 billion years old, having formed just 100 million years after the Big Bang',
@@ -298,6 +324,7 @@
         size: '152,000 Light Years (1.43 Quintillion km)',
         image: '/images/compare/andromeda.jpg',
         imageDesc: 'An image of the Andromeda galaxy',
+        imageCaption: 'Guillero Ferla',
         factList: [
             'The Andromeda galaxy is the closest large galaxy to the Milky Way',
             'It is much larger that the Milky Way, containing over 1 trillion stars',
@@ -310,6 +337,7 @@
         size: '1,760,000 Light Years (16.65 Quintillion km)',
         image: '/images/compare/eso_383g_076.jpg',
         imageDesc: 'An image of ESO 383-G 076',
+        imageCaption: 'By Legacy Surveys / D. Lang (Perimeter Institute)',
         factList: [
             'ESO 383-G 076 is one of the largest galaxies in the universe',
             'Unlike the Milky Way and Andromeda, which are spiral galaxies, ESO 383-G 076 is elliptical (oval shaped)',
@@ -321,6 +349,7 @@
         size: '520,000,000 Light Years',
         image: '/images/compare/laniakea.jpg',
         imageDesc: 'An illustration of the Laniakea Supercluster',
+        imageCaption: 'Andrew Z. Colvin',
         factList: [
             'The Laniakea Supercluster is a collection of over 100,000 galaxies, including the Milky Way',
             'Galaxies within the Laniakea Supercluster are gravitationally drawn to a point in space known as The Great Attractor',
@@ -328,10 +357,11 @@
         ]
     },
     {
-        title: 'Hercules-Corona Borealis Great Wall',
+        title: 'The Hercules-Corona Borealis Great Wall',
         size: '10,000,000,000 Light Years',
         image: '/images/compare/hercules_corona.jpg',
         imageDesc: 'An illustration of the Hercules-Corona Borealis Great Wall',
+        imageCaption: 'Pablo Carlos Budassi',
         factList: [
             'The Hercules-Corona Borealis Great Wall is a galactic filament, or collection of galactic superclusters',
             'It is the largest known structure in the observable universe'
@@ -342,6 +372,7 @@
         size: '93,016,000,000 Light Years',
         image: '/images/compare/observable_universe.jpg',
         imageDesc: 'An illustration of the observable universe',
+        imageCaption: 'ESA/NASA/JPL-Caltech',
         factList: [
             'The observable universe is a sphere containing everything that can be observed from Earth',
             'Anything beyond this sphere cannot be detected, as no information has had enough time to travel to Earth since the formation of the universe',
