@@ -3,7 +3,14 @@
 const navbarSelect = document.querySelector('.js-nav-link-size');
 navbarSelect.classList.add('nav-link-current');
 
+const navbarTop = document.querySelector('.nav-top');
+navbarTop.classList.add('nav-top-size');
 
+const navbarSide = document.querySelector('.nav-side-width');
+navbarSide.classList.add('nav-side-size');
+
+const footerSelect = document.querySelector('.footer');
+footerSelect.classList.add('footer-size');
 
 //Generates IDs for each data entry based on index in the array
 const sizeListId = sizeList.map((item, index) => {
@@ -28,17 +35,17 @@ sizeList.forEach((item) => {
     if (factCount % 2 === 0) {
         sizeHTML += `
         <div id="${item.id}" class="compare-card">
-            <div class="row justify-content-around">
+            <div class="container-fluid row-buffer row justify-content-around">
                 <div class="col-10 card-title-container">
                     <h1 class="card-count">- ${factCount + 1} -</h1>
                     <h1 class="card-title">${item.title}</h1>
                     <p class="card-diameter">Diameter: ${item.size}</p>
                 </div>
-                <div class="col-md-6 col-12">
-                    <img class="card-image" src="${item.image}" title="${item.imageDesc}">
-                    <p class="card-image-caption">${item.imageDesc} by ${item.imageCaption}</p>
+                <div class="col-lg-6 col-12">
+                    <img class="card-image" src="${item.image}" title="${item.imageDesc} by ${item.imageCaption}">
+                    <p class="card-image-caption">${item.imageDesc}</p>
                 </div>
-                <div class="card-fact-container col-md-6 col-12">
+                <div class="card-fact-container col-lg-6 col-12">
                     <h2>Facts:</h2>
                     <p>${factListHTML}</p>
                 </div>
@@ -49,19 +56,19 @@ sizeList.forEach((item) => {
     } else {
         sizeHTML += `
         <div id="${item.id}" class="compare-card">
-            <div class="row justify-content-around">
+            <div class="container-fluid row-buffer row justify-content-around">
                 <div class="col-10 card-title-container">
                     <h1 class="card-count">- ${factCount + 1} -</h1>
                     <h1 class="card-title">${item.title}</h1>
                     <p class="card-diameter">Diameter: ${item.size}</p>
                 </div>
-                <div class="card-fact-container col-md-6 col-12">
+                <div class="card-fact-container col-lg-6 col-12">
                     <h2>Facts:</h2>
                     <p>${factListHTML}</p>
                 </div>
-                <div class="col-md-6 col-12">
-                    <img class="card-image" src="${item.image}" title="${item.imageDesc}">
-                    <p class="card-image-caption">${item.imageDesc} by ${item.imageCaption}</p>
+                <div class="col-lg-6 col-12">
+                    <img class="card-image" src="${item.image}" title="${item.imageDesc} by ${item.imageCaption}">
+                    <p class="card-image-caption">${item.imageDesc}</p>
                 </div>
             </div>
         </div>
@@ -89,7 +96,7 @@ sizeList.forEach((item) => {
 
 //Highlights entries on sidenav based on position on the page
 window.addEventListener('scroll', () => {
-    const position = Math.floor((scrollY + 500) / 1000);
+    const position = Math.floor((scrollY) / 1000);
     if (position < sizeList.length) {
         NavSideHighlight(position);
     }

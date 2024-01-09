@@ -16,38 +16,46 @@ attributionsList.forEach((item) => {
     if (item.sourceB !== undefined) {
         attributionsHTML += `
         <tr>
-            <td>${item.name}</td>
-            <td>${item.page}</td>
+            <td><div>${item.name}</div></td>
+            <td><div>${item.page}</div></td>
             <td>
-                <a target="_blank" href="${item.source}">
-                    ${item.sourceName}
-                </a>
-                /
-                <a target="_blank" href="${item.sourceB}">
-                    ${item.sourceBName}
-                </a>
+                <div>
+                    <a target="_blank" href="${item.source}">
+                        ${item.sourceName}
+                    </a>
+                    /
+                    <a target="_blank" href="${item.sourceB}">
+                        ${item.sourceBName}
+                    </a>
+                </div>
             </td>
             <td>
-                <a target="_blank" href="${item.licence}">
-                    ${item.licenceName}
-                </a>
+                <div>
+                    <a target="_blank" href="${item.licence}">
+                        ${item.licenceName}
+                    </a>
+                </div>
             </td>
         </tr>
         `;
     } else {
         attributionsHTML += `
         <tr>
-            <td>${item.name}</td>
-            <td>${item.page}</td>
+            <td><div>${item.name}</div></td>
+            <td><div>${item.page}</div></td>
             <td>
-                <a target="_blank" href="${item.source}">
-                    ${item.sourceName}
-                </a>
+                <div>
+                    <a target="_blank" href="${item.source}">
+                        ${item.sourceName}
+                    </a>
+                </div>
             </td>
             <td>
-                <a target="_blank" href="${item.licence}">
-                    ${item.licenceName}
-                </a>
+                <div>
+                    <a target="_blank" href="${item.licence}">
+                        ${item.licenceName}
+                    </a>
+                </div>
             </td>
         </tr>
         `;

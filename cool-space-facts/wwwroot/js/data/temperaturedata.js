@@ -64,8 +64,8 @@
         imageCaption: 'NASA/JPL/Space Science Institute',
         factList: [
             'Titan is the second largest moon in the Solar System, and largest moon of Saturn',
-            'Titan is the most distant object we have successfully landed a spacecraft on. It was visited by the Huygens spaceprobe in January 2005',
-            'It is the only moon in the Solar System with a dense atmosphere, and the only place other than Earth known to have a hydrologic cycle',
+            'Titan became the most distant object we have successfully landed a spacecraft on when it was visited by the Huygens spaceprobe in January 2005',
+            'It is the only moon in the Solar System with a dense atmosphere, and the place other than Earth known to have a hydrologic cycle',
             'Temperature on Titan sees very little variation, with the temperature at the poles being only a few degrees colder than at the equator'
         ]
     },

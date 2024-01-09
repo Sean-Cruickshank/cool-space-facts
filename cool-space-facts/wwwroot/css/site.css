@@ -43,16 +43,28 @@ p {
     color: white;
 }
 
-    .link-a:hover {
-        color: darkgoldenrod;
-    }
-
 a {
     color: white;
 }
 
 a:hover {
     color: darkgoldenrod;
+}
+
+.footer-size a:hover {
+    color: mediumpurple;
+}
+
+.footer-distance a:hover {
+    color: maroon;
+}
+
+.footer-temperature a:hover {
+    color: deepskyblue;
+}
+
+.footer-speed a:hover {
+    color: limegreen;
 }
 
 /* Shared Layout */
@@ -104,9 +116,25 @@ a:hover {
 
 .footer-link {
     text-transform: uppercase;
-    color: black;
+    color: black !important;
     background-color: darkgoldenrod;
     border-radius: 5px;
+}
+
+.footer-size .footer-link {
+    background-color: mediumpurple;
+}
+
+.footer-distance .footer-link {
+    background-color: maroon;
+}
+
+.footer-temperature .footer-link {
+    background-color: deepskyblue;
+}
+
+.footer-speed .footer-link {
+    background-color: limegreen;
 }
 
 .footer-sublink {

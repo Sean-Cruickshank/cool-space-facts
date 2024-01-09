@@ -1,7 +1,7 @@
 ﻿/* Home Page */
 
 .home-intro {
-    margin-bottom: 150px;
+    margin-bottom: 600px;
     padding:0;
 }
 
@@ -18,6 +18,11 @@
 
 .home-bg-large {
     display: none;
+}
+
+.row-buffer {
+    padding: 0;
+    margin: 0;
 }
 
 .home-bg-medium {
@@ -44,7 +49,7 @@
         color: darkgoldenrod;
     }
 
-    .home-card p, .home-card-disclaimer p {
+    .home-card p, .card-disclaimer p {
         font-size: 1.5rem;
     }
 
@@ -64,17 +69,16 @@
     margin: 20px;
 }
 
-.home-card-disclaimer {
+.card-disclaimer {
     width: 80%;
     padding: 10px;
-    margin-bottom: 80px;
     background-color: rgba(50,0,0,0.6);
     min-height: 200px;
     border: 3px solid #400;
     border-radius: 10px;
 }
 
-    .home-card h2, .home-card-disclaimer h2 {
+    .home-card h2, .card-disclaimer h2 {
         margin-bottom: 30px;
         font-family: 'OCR A';
         text-transform: uppercase;
@@ -82,22 +86,28 @@
         font-size: 3.5rem;
     }
 
-    .home-card-disclaimer h2 {
+    .card-disclaimer h2 {
         color: lightcoral;
     }
 
-    .home-card-disclaimer p {
+    .card-disclaimer p {
         color: lightcoral;
     }
 
 /* Attributions Page */
+
+.attributions-disclaimer {
+    text-align: center;
+    margin-top: 10px;
+}
 
 .attributions-intro {
     background-color: rgba(0,0,0,0.8);
     margin: 0;
     margin-top: 10px;
     padding: 4px;
-    border: solid 2px white;
+    border: solid 2px #111;
+    border-radius: 10px;
 }
 
 .attribution-radio-select, .attribution-searchbar {
@@ -124,7 +134,8 @@
 .attributions-table {
     margin-top: 10px;
     background-color: rgba(0,0,0,0.5);
-    border: solid 2px white;
+    border: solid 2px #111;
+    border-radius: 10px;
     width: 100%;
     font-size: 1.5rem;
 }
@@ -170,6 +181,7 @@
 #attributionsTable {
     color: white;
     width: 100%;
+    word-wrap: break-word;
 }
        
 
@@ -188,7 +200,12 @@
 
 /* @media screen size - Large */
 @media only screen and (min-width: 992px) and (max-width: 1199.999px) {
-    
+
+    .home-intro {
+        margin-bottom: 450px;
+        padding: 0;
+    }
+
     .home-bg-large {
         display: block;
     }
@@ -197,7 +214,7 @@
         width: 250px;
     }
 
-    .home-card h2, .home-card-disclaimer h2 {
+    .home-card h2, .card-disclaimer h2 {
         font-size: 3rem;
     }
 
@@ -215,6 +232,18 @@
 /* @media screen size - Medium */
 @media only screen and (min-width: 768px) and (max-width: 991.999px) {
 
+    .home-intro {
+        margin-bottom: 450px;
+        padding: 0;
+    }
+    
+    .home-intro img {
+        width: calc(100% - 150px);
+        position: absolute;
+        left: 150px;
+        z-index: 1;
+    }
+
     .home-bg-medium {
         display: block;
     }
@@ -227,11 +256,11 @@
         width: 350px;
     }
 
-    .home-card p, .home-card-disclaimer p {
+    .home-card p, .card-disclaimer p {
         font-size: 1.4rem;
     }
 
-    .home-card h2, .home-card-disclaimer h2 {
+    .home-card h2, .card-disclaimer h2 {
         font-size: 3.5rem;
     }
 
@@ -249,6 +278,18 @@
 /* @media screen size - Small */
 @media only screen and (min-width: 576px) and (max-width: 767.999px) {
 
+    .home-intro {
+        margin-bottom: 350px;
+        padding: 0;
+    }
+    
+    .home-intro img {
+        width: calc(100% - 130px);
+        position: absolute;
+        left: 130px;
+        z-index: 1;
+    }
+
     .home-bg-medium {
         display: block;
     }
@@ -261,11 +302,11 @@
         width: 250px;
     }
 
-    .home-card p, .home-card-disclaimer p {
+    .home-card p, .card-disclaimer p {
         font-size: 1.2rem;
     }
 
-    .home-card h2, .home-card-disclaimer h2 {
+    .home-card h2, .card-disclaimer h2 {
         font-size: 2.7rem;
     }
 
@@ -294,24 +335,36 @@
 /* @media screen size - Extra Small */
 @media only screen and (max-width: 575.999px) {
 
+    .home-intro {
+        margin-bottom: 250px;
+        padding: 0;
+    }
+    
+    .home-intro img {
+        width: calc(100% - 130px);
+        position: absolute;
+        left: 130px;
+        z-index: 1;
+    }
+
     .home-bg-medium {
         display: block;
     }
 
-    .home-card {
-        width: 80%;
+    .home-card, .card-disclaimer {
+        width: 90%;
     }
 
     .home-card-image {
         width: 140px;
     }
 
-    .home-card p, .home-card-disclaimer p {
+    .home-card p, .card-disclaimer p {
         font-size: 1rem;
     }
 
-    .home-card h2, .home-card-disclaimer h2 {
-        font-size: 2.2rem;
+    .home-card h2, .card-disclaimer h2 {
+        font-size: 1.8rem;
     }
 
     .home-card a div {
@@ -338,5 +391,9 @@
 
     .attribution-radio-select h3, .attribution-searchbar h3 {
         font-size: 1.6rem;
+    }
+
+    td div {
+        max-width: 50px;
     }
 }

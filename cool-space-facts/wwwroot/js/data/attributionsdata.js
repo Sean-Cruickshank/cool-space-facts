@@ -462,12 +462,13 @@
         licenceName: 'GNU Free Documentation License v1.2'
     },
     {
+        
         name: 'Blue Stars - Image',
         page: 'Temperature',
         source: 'http://www.treasuresofthesouthernsky.org/',
         sourceName: 'By Robert Gendler',
-        sourceB: 'Modified by Wikimedia Commons, cropped by Sean Cruickshank',
-        sourceBName: 'https://commons.wikimedia.org/w/index.php?curid=27263541',
+        sourceB: 'https://commons.wikimedia.org/w/index.php?curid=27263541',
+        sourceBName: 'Modified by Wikimedia Commons, cropped by Sean Cruickshank',
         licence: 'https://creativecommons.org/licenses/by-sa/4.0/',
         licenceName: 'CC BY-SA 4.0'
     },

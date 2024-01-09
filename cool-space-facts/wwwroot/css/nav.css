@@ -69,6 +69,22 @@
                 color: darkgoldenrod;
             }
 
+.nav-top-size li a:hover {
+    color: mediumpurple;
+}
+
+.nav-top-distance li a:hover {
+    color: maroon;
+}
+
+.nav-top-temperature li a:hover {
+    color: deepskyblue;
+}
+
+.nav-top-speed li a:hover {
+    color: limegreen;
+}
+
 .nav-link-current {
     background-color: #111 !important;
 }
@@ -77,9 +93,21 @@
         color: white !important;
     }
 
-    .nav-link-current a:hover {
-        color: darkgoldenrod !important;
-    }
+.nav-top-size .nav-link-current a:hover {
+    color: mediumpurple !important;
+}
+
+.nav-top-distance .nav-link-current a:hover {
+    color: maroon !important;
+}
+
+.nav-top-temperature .nav-link-current a:hover {
+    color: deepskyblue !important;
+}
+
+.nav-top-speed .nav-link-current a:hover {
+    color: limegreen !important;
+}
 
 /* Top Navbar Dropdown */
 
@@ -146,6 +174,22 @@
         color: darkgoldenrod;
     }
 
+.nav-side-size .nav-side-link:hover {
+    color: mediumpurple;
+}
+
+.nav-side-distance .nav-side-link:hover {
+    color: maroon;
+}
+
+.nav-side-temperature .nav-side-link:hover {
+    color: deepskyblue;
+}
+
+.nav-side-speed .nav-side-link:hover {
+    color: limegreen;
+}
+
 .nav-side-item {
     color: white;
     display: block;
@@ -162,6 +206,22 @@
         color: darkgoldenrod;
     }
 
+.nav-side-size .nav-side-item:hover {
+    color: mediumpurple;
+}
+
+.nav-side-distance .nav-side-item:hover {
+    color: maroon;
+}
+
+.nav-side-temperature .nav-side-item:hover {
+    color: deepskyblue;
+}
+
+.nav-side-speed .nav-side-item:hover {
+    color: limegreen;
+}
+
 .nav-side-width {
     width: 150px;
     float: left;
@@ -169,8 +229,24 @@
 
 .js-nav-side-item {
     background-color: white;
-    color: darkgoldenrod !important;
     border-radius: 5px;
+    color: darkgoldenrod;
+}
+
+.nav-side-size .js-nav-side-item {
+    color: mediumpurple !important;
+}
+
+.nav-side-distance .js-nav-side-item {
+    color: maroon !important;
+}
+
+.nav-side-temperature .js-nav-side-item {
+    color: deepskyblue !important;
+}
+
+.nav-side-speed .js-nav-side-item {
+    color: limegreen !important;
 }
 
 /* @media screen size - Extra Large+ */
@@ -272,9 +348,9 @@
     }
         .nav-top ul {
             display: block;
-            border: solid 2px darkgoldenrod;
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
+            border: solid 2px darkgoldenrod;
         }
 
         .nav-top li {
@@ -292,6 +368,22 @@
             .nav-top li a {
                 font-size: 1rem;
             }
+
+    .nav-top-size ul {
+        border: solid 2px mediumpurple;
+    }
+
+    .nav-top-distance ul {
+        border: solid 2px maroon;
+    }
+
+    .nav-top-temperature ul {
+        border: solid 2px deepskyblue;
+    }
+
+    .nav-top-speed ul {
+        border: solid 2px limegreen;
+    }
 
     .nav-link-current {
         background-color: #111 !important;
